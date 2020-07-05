@@ -1,0 +1,232 @@
+footer {
+    width: 100%;
+    /* height: 400px; */
+    background-color: #000;
+    min-width: 1195px;
+    color: #ccc;
+    border-top: 4px solid #c1a75f;
+}
+
+.footer-inner {
+    padding: 20px 0;
+    background: url(../images/footer_bg_tre.png);
+}
+
+.footer-up {
+    width: 62.75%;
+    min-width: 1195px;
+    margin: 0 auto;
+}
+
+.footer-inner .footer-up>div {
+    float: left;
+}
+
+.calender,
+.follow-us,
+.brand-message,
+.about-us {
+    height: 318px;
+    padding-right: 70px;
+    margin-right: 70px;
+    border-right: 1px solid #d8d8d8;
+}
+
+.calender h4,
+.follow-us h4,
+.brand-message h4,
+.about-us h4 {
+    font-size: 14px;
+    color: #a0a0a0;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.calender .month-day {
+    display: block;
+    width: 48px;
+    height: 48px;
+    color: #666;
+    font-size: 1.8rem;
+    text-align: center;
+    /* font-family: arial; */
+    background: #fff;
+    overflow: hidden;
+    padding-top: 4px;
+    margin-bottom: 4px;
+}
+
+.calender .month .day {
+    display: block;
+    height: 29px;
+    font-size: 29px;
+    line-height: 29px;
+    overflow: hidden;
+}
+
+.follow-us h4 {
+    margin-bottom: 8px;
+}
+
+.follow-us .eqcode {
+    margin-bottom: 16px;
+}
+
+.follow-us .weibo a {
+    color: #666;
+    padding-left: 30px;
+    line-height: 24px;
+    display: block;
+    font-style: 1.2rem;
+    background: url("../images/icon_tre.png") -594px -400px no-repeat;
+}
+
+.follow-us .weibo a:hover,
+.some-links>div li a:hover {
+    color: #333;
+}
+
+.about-us {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.some-links>.link-li li {
+    float: left;
+    margin-right: 8px;
+}
+
+.some-links>.link-li {
+    padding-bottom: 6px;
+}
+
+.some-links a {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.about-us span {
+    display: block;
+}
+
+.info {
+    margin: 10px 0;
+}
+
+.kefu {
+    color: #666;
+    font-size: 1.2rem;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 33px;
+    background: url('../images/icon_tre.png') 0 -194px no-repeat;
+}
+
+.kefu1 {
+    background: url('../images/icon_tre.png') -300px -194px no-repeat;
+}
+
+.service {
+    background: url('../images/icon_tre.png') -600px -194px no-repeat;
+    margin-bottom: 17px;
+}
+
+.zhifubao {
+    float: left;
+    width: 50px;
+    padding-top: 40px;
+    background: url(../images/icon_tre.png) -600px -300px no-repeat;
+}
+
+.caifutong {
+    float: left;
+    width: 50px;
+    margin-left: 22px;
+    padding-top: 40px;
+    background: url(../images/icon_tre.png) 0px -400px no-repeat;
+}
+
+.footer-down {
+    width: 62.75%;
+    min-width: 1195px;
+    margin: 0 auto;
+    /* padding: 20px 0; */
+}
+
+.footer-down-inner {
+    padding-top: 23px;
+    width: 750px;
+    margin: 0 auto;
+}
+
+.copyright {
+    padding: 14px 0 14px 250px;
+    background: url(../images/icon_tre.png) 0px -470px no-repeat;
+}
+
+.copyright-links a {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+}
+
+.copyright-desc {
+    color: #ccc;
+    font-size: 1.2rem;
+    line-height: 23px;
+    color: #777;
+}
+
+.copyright-desc-links a {
+    font-size: 1.2rem;
+    line-height: 23px;
+    color: #777;
+    margin-right: 1.5rem;
+}
+
+.copyright-desc-links img {
+    vertical-align: middle;
+}
+
+.footer-down-inner a:hover {
+    color: #c9a063;
+}
+
+.back {
+    position: fixed;
+    width: 32px;
+    /* height: 112px; */
+    /* bottom: 0; */
+    left: 49.7%;
+    bottom: 0px;
+    margin-left: 600px;
+    z-index: 9999;
+}
+
+.backToTop,
+.backToIndex {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    display: block;
+    line-height: 24px;
+    font-size: 1.3rem;
+    text-align: center;
+    /* vertical-align: middle; */
+}
+
+.backToTop {
+    background: url(../images/footer_bg_tre.png);
+}
+
+.backToTop:hover {
+    background: #000;
+}
+
+.backToIndex {
+    background: #c9a063;
+    height: 40px;
+    line-height: 18px;
+}

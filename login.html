@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <a href="index.html" class="enter-index"> </a>
+        <div class="login">
+            <h3>
+                欢迎回来！请登录</h3>
+            <div class="login-content">
+                <p class="login-item"><input class="user" type="text" placeholder="手机号"></p>
+                <p class="login-item"><input type="text" placeholder="验证码" class="input-check"><img class="checkCode" src="./images/check/check1.jpg" alt=""></p>
+                <p class="login-item"><input class='phoneCode' type="text" placeholder="手机动态码"><button class="getMes">获取动态码</button></p>
+                <div class="errorMes">
+
+                </div>
+                <button class="login-btn">登录</button>
+                <p class="links"><a href="#">忘记密码</a><a href="#">我要注册</a></p>
+            </div>
+        </div>
+        <div class="showError">
+            <div class="alert">
+
+                <p class="tip">温馨提示</p>
+                <div class="content">
+                    <div class="inner">
+                        <p class="errorMessage"></p>
+                        <button class="yes">确定</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+        var CheckCodeArr = ['0', '6698', '5137', '9151', '9311', '7637', '7525', '7382', '0822', '2507', '4882']
+        var code = 0
+        $('.checkCode').click(function() {
+            var choose = Math.floor(Math.random() * 10 + 1)
+            var path = './images/check/check' + choose + '.jpg'
+            code = CheckCodeArr[choose]
+            $(this).attr('src', path)
+            console.log(choose)
+        })
+        var phoneReg = /^[1][3456789][0-9]{9}$/
+        $('.getMes').click(function() {
+            var phone = $('.user').val()
+            var checkCode = $('.input-check').val()
+            if (phoneReg.test(phone) === false) {
+                $('.showError').css('display', 'block')
+                $('.showError .content p').text('手机号码格式不正确')
+            } else if (checkCode === '') {
+                $('.showError').css('display', 'block')
+                $('.showError .content p').text('请输入验证码')
+
+            } else if (checkCode !== code) {
+                $('.showError').css('display', 'block')
+                $('.showError .content p').text('请输入正确验证码')
+            }
+
+        })
+        $('.yes').click(function() {
+            $('.showError').css('display', 'none')
+
+        })
+        $('.login-btn').click(function() {
+
+            var phone = $('.user').val()
+            var checkCode = $('.input-check').val()
+            var phoneCode = $('.phoneCode').val()
+            if (phoneReg.test(phone) === false) {
+                $('.errorMes').text('')
+                $('.login input').remove('wrong')
+                var wrong = $('<p>请输入正确手机号</p>')
+                $('.errorMes').append(wrong)
+                $('.user').addClass('wrong')
+
+            } else if (checkCode === '' || checkCode !== code || phoneCode === '') {
+                $('.errorMes').text('')
+                $('.login input').remove('wrong')
+                var wrong = $('<p>请输入正确验证码</p>')
+                $('.errorMes').append(wrong)
+                if (checkCode === '' || checkCode !== code) {
+                    $('.input-check').addClass('wrong')
+                } else {
+
+                    $('.phoneCode').addClass('wrong')
+                }
+
+            }
+            if ((checkCode === '' || checkCode !== code || phoneCode === '') && phoneReg.test(phone) === false) {
+                $('.errorMes').text('')
+                $('.login input').remove('wrong')
+                var wrong = $('<p>请输入正确手机号</p>')
+                var wrong1 = $('<p>请输入正确验证码</p>')
+                $('.errorMes').append(wrong, wrong1)
+                $('.phoneCode').addClass('wrong')
+                if (checkCode === '' || checkCode !== code) {
+                    $('.input-check').addClass('wrong')
+                    $('.user').addClass('wrong')
+                } else {
+
+                    $('.phoneCode').addClass('wrong')
+                    $('.user').addClass('wrong')
+                }
+            } else {
+                window.location.href = "index.html";
+            }
+
+        })
+    </script>
+</body>
+
+</html>

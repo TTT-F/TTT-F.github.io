@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo">
+                <a href="index.html">TRENDIANO</a>
+            </h1>
+            <div class="links clearfix">
+                <li>
+                    <a href="#">登录</a>
+                </li>
+                <li>
+                    <a href="#">注册</a>
+                </li>
+                <li>
+                    <a href="#">我的账户</a>
+                </li>
+                <li>
+                    <a href="#">我的收藏</a>
+                </li>
+                <li>
+                    <a href="#" class="head-cart">购物袋[<span></span>]</a>
+                </li>
+            </div>
+        </header>
+        <section>
+            <div class="inner">
+                <div class="buy-step">
+                    <img src="./images/buy_step.png" alt="">
+                    <div class="cart-titl">购物袋</div>
+                </div>
+                <div class="cart-tip">
+                    <span class="block1"></span>
+                    <span class="block2"></span>
+                    <p>优惠：单笔消费，满699元免邮</p>
+                </div>
+                <div class="cart">
+                    <div class="empty clearfix">
+                        <span>购物袋为空啦</span>
+                    </div>
+
+                    <div class="has">
+                        <div class="pro-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="col1"></th>
+                                        <th class="co12"></th>
+                                        <th class="col3">商品名称</th>
+                                        <th class="col4">颜色/尺码</th>
+                                        <th class="col5">单价</th>
+                                        <th class="col6">数量</th>
+                                        <th class="col7">小计</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="page-num">1</div>
+                    <p class="choose-item"><span class="all-choose"><input id="all-checked" type="checkbox" checked=true value="" />全选</span> <a class='del-opt' href="javascript:;" id="">删除已选</a></p>
+                    <div class="total-count clearfix">
+                        <p>
+                            已选：<span class="total-num"></span>件<br/> 总计金额（不含运费）：￥<span class="total-price"></span><em>.00</em>
+                        </p>
+                        <button class="buy-now">马上结算</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-inner">
+                <div class="copyright-links">
+                    <a href="#" id="">隐私申明</a>
+                    <a href="#" id="">联系我们</a>
+                </div>
+                <p class="copyright">Copyright @ 2010-2020 广州赫基信息科技有限公司版权所有 增值电信业务经营许可证 <a href="#"> 粤B2-20100553 粤ICP备10229258-4号</a></p>
+            </div>
+        </footer>
+        <div class="back">
+            <a href="javascript:void(0);" class="backToTop">TOP</a>
+
+            <a href="index.html" class="backToIndex">返回<br/>首页</a>
+            <a href="javascript:void(0);" class="lianxi">联系<br/>客服</a>
+
+        </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

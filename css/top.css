@@ -1,0 +1,304 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    /*必须要*/
+    display: block;
+    /*必须要*/
+    clear: both;
+    /*必须要 清除前面元素对后面的影响*/
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+}
+
+html {
+    font-size: 10px;
+}
+
+.top-inner {
+    width: 62.75%;
+    min-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    min-width: 1195px;
+}
+
+.top {
+    background-color: #000;
+    position: relative;
+}
+
+.link-box {
+    /* height: 12px; */
+    height: 36px;
+    line-height: 36px;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    float: right;
+    position: absolute;
+}
+
+.top .link-box a {
+    padding: 0 11px;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
+
+.top .link-box .myAccount {
+    padding: 0 22px 0 13px;
+}
+
+.top .link-box .like {
+    padding: 0 18px 0 15px;
+    background: url(../images/icon_tre.png) 0 -97px no-repeat;
+}
+
+.top .link-box .cart {
+    padding-left: 19px;
+    background: url(../images/icon_tre.png) -300px -100px no-repeat;
+}
+
+.top .link-box a:hover,
+nav a:hover {
+    color: #c9a063;
+}
+
+.top .logo {
+    /* float: left; */
+    width: 100%;
+    height: 72px;
+    position: relative;
+    top: 26px;
+}
+
+.top .logo>a {
+    display: block;
+    width: 200px;
+    height: 56px;
+    margin-left: 50px;
+    margin: 0 auto;
+    background: url(../images/icon_tre.png) 0px 0px no-repeat;
+}
+
+.search {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    z-index: 10;
+}
+
+.search input {
+    border: 0;
+    border-bottom: 1px solid #555555;
+    background: none;
+    height: 24px;
+    padding: 2px 6px;
+    line-height: 24px;
+    width: 178px;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
+
+.search-btn {
+    width: 28px;
+    height: 28px;
+    border: 0;
+    outline: none;
+    text-indent: -99999px;
+    background: url(../images/icon_tre.png) -600px -89px no-repeat;
+}
+
+.search-btn:hover {
+    background: url(../images/icon_tre.png) -600px 10px no-repeat;
+}
+
+nav {
+    background-color: #000;
+    padding: 10px 0;
+    padding-top: 16px;
+}
+
+.nav-fixed {
+    width: 100%;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+nav ul {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+nav>ul>li {
+    float: left;
+    margin-right: 36px;
+    /* line-height: 40px; */
+    height: 20px;
+}
+
+nav>ul>li>a {
+    font-size: 1.2rem;
+}
+
+.next-ul {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.9);
+    left: 0;
+    display: none;
+    z-index: 10001;
+    /* opacity: 0; */
+}
+
+.next-ul-inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.next-ul h3 {
+    height: 44px;
+    padding-top: 16px;
+    border-bottom: 1px solid #6b6b6b;
+    line-height: 44px;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left,
+.right {
+    float: left;
+}
+
+.left {
+    padding: 20px 80px 20px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right {
+    padding: 20px 80px 20px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.next-ul li {
+    line-height: 30px;
+    padding: 0 3px;
+}
+
+.next-ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.next-ul li a:hover {
+    background-color: #333333;
+}
+
+.worktime {
+    font-size: 1.2rem;
+    color: #fff;
+    float: right;
+}

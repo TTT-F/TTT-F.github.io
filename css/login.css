@@ -1,0 +1,273 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    /*必须要*/
+    display: block;
+    /*必须要*/
+    clear: both;
+    /*必须要 清除前面元素对后面的影响*/
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    min-width: 950px;
+    min-height: 445px;
+    background: url(../images/login_trendiano.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.enter-index {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.login {
+    position: absolute;
+    width: 28.63%;
+    height: 246px;
+    margin-left: 80px;
+    border: 1px solid #ccc;
+    top: 20%;
+    left: 50%;
+    background-color: #fff;
+    z-index: 3;
+    padding: 20px 0;
+}
+
+.login h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+.login-item input {
+    width: 50%;
+}
+
+.login-content {
+    padding: 0 30px;
+}
+
+.login-item {
+    margin-bottom: 10px;
+}
+
+.login-item .input-check {
+    float: left;
+    /* display: block; */
+}
+
+.login-item img {
+    width: 90px;
+    height: 30px;
+    /* display: block; */
+    /* float: left; */
+}
+
+.login-item input {
+    line-height: 26px;
+    border: 1px solid #f0f0ef;
+    padding-left: 3px;
+    margin-right: 3px;
+}
+
+.login-item .user {
+    width: 97%;
+    margin-top: 18px;
+    margin-right: 0;
+}
+
+.getMes {
+    background-color: #f93d69;
+    color: #fff;
+    border: 0;
+    outline: none;
+    height: 28px;
+    padding: 0 8px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: .4rem 0;
+    color: #fff;
+    background-color: #f93d69;
+    margin: 6px 0;
+    outline: none;
+    border: 0;
+}
+
+.login-content .links {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.login-content .links a {
+    float: right;
+    color: #0d5b82;
+    margin-left: 6px;
+}
+
+.showError {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: block;
+    width: 100%;
+    height: 445px;
+    display: none;
+}
+
+.showError .alert {
+    position: absolute;
+    left: 463px;
+    top: 250.5px;
+    width: 350px;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 12px #000;
+}
+
+.showError .tip {
+    background: #efefef;
+    color: #666;
+    cursor: pointer;
+    height: 34px;
+    padding: 0 12px;
+    line-height: 34px;
+}
+
+.content {
+    padding: 0 12px 12px;
+}
+
+.inner {
+    text-align: center;
+    padding: 25px;
+}
+
+.inner p {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.content .yes {
+    padding: 6px 2em;
+    margin: 0 4px;
+    background: #efefef;
+    border: 1px solid #ccc;
+    color: #666;
+}
+
+.errorMes {
+    color: #f93d69;
+}
+
+.login .login-item .wrong {
+    border: 1px solid #f93d69;
+}
