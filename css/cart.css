@@ -169,7 +169,10 @@ section {
 }
 
 .buy-step img {
-    width: 100%;
+    display: block;
+    width: 67.94%;
+    /* width: 100%; */
+    margin: 0 auto;
 }
 
 .buy-step .cart-titl {
@@ -342,7 +345,13 @@ section {
 }
 
 .has tbody .num {
+    /* position: relative; */
+}
+
+.has tbody .nums {
     position: relative;
+    width: 60px;
+    margin: 0 auto;
 }
 
 .has tbody .num input {
@@ -360,14 +369,14 @@ section {
 }
 
 .has tbody .num .add {
-    top: 37%;
-    right: 38%;
+    top: 4%;
+    right: 10px;
     background: url(../images/btn_arrow_up_down.png) left 0px no-repeat;
 }
 
 .has tbody .num .minus {
     top: 44%;
-    right: 38%;
+    right: 10px;
     background: url(../images/btn_arrow_up_down.png) left -10px no-repeat;
 }
 

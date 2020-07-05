@@ -135,8 +135,8 @@ function addTr() {
             <p>${cartArr[i].proName.proNum}</p></td>
             <td class="colorNsize"><a href="javascript:;"><span>${cartArr[i].color}</span>/<span class='now-size'>${cartArr[i].size}</span></a></td>
             <td class="price"><span>￥<em>${cartArr[i].price}</em>.00</span></td>
-            <td class="num">
-            <em class='add'></em><em class='minus'></em><input type="text" value="${cartArr[i].num}" class="num"/>
+            <td class="num"><p class="nums">
+            <em class='add'></em><em class='minus'></em><input type="text" value="${cartArr[i].num}" class="num"/></p>
             <p><a class="save" href="javascript:;">收藏</a> / <a class="del" href="javascript:;">删除</a></p>
             </td>
             <td class="count">￥ <span>${cartArr[i].count}</span>.00</td>
@@ -213,21 +213,21 @@ $('.del-opt').click(function() {
     }
 })
 $('.add').click(function() {
-    var num = $(this).parent('td').find('input').val() * 1 + 1
+    var num = $(this).parent('p').find('input').val() * 1 + 1
     var ind = $(this).parents('tr').index()
     console.log(num)
-    $(this).parent('td').find('input').val(num)
+    $(this).parent('p').find('input').val(num)
     $('tbody tr').eq(ind).find('.count span').text(num * $('tbody tr').eq(ind).find('.price span em').text())
     buyCount()
 
 })
 $('.minus').click(function() {
 
-    var num = $(this).parent('td').find('input').val() * 1 - 1
+    var num = $(this).parent('p').find('input').val() * 1 - 1
     if (num !== 0) {
         var ind = $(this).parents('tr').index()
         console.log(num)
-        $(this).parent('td').find('input').val(num)
+        $(this).parent('p').find('input').val(num)
         $('tbody tr').eq(ind).find('.count span').text(num * $('tbody tr').eq(ind).find('.price span em').text())
         buyCount()
     }
